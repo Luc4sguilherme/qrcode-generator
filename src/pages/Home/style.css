@@ -1,0 +1,112 @@
+.App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--primaryTheme);
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  color: var(--primaryButton);
+}
+
+.close-modal-btn:hover {
+  opacity: 0.5;
+}
+
+.save-file-btn {
+  bottom: 15px;
+  border: none;
+  background: #909398;
+  color: var(--primaryButtonText);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.save-file-btn:hover {
+  background: #2c87c5;
+}
+
+.form-wrapper {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.form-wrapper form {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.form-wrapper input {
+  display: table-cell;
+  width: 100%;
+  height: 56px;
+  padding: 10px 16px;
+  font: 17px lato, arial;
+  color: #000;
+  background: #fff;
+  border: 1px solid #bbb;
+  border-right: 0;
+  border-radius: 3px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  box-sizing: border-box;
+  box-shadow: var(--primaryShadowBg);
+}
+
+.form-wrapper button {
+  height: 56px;
+  padding: 10px 16px;
+  font: bold 17px lato, arial;
+  color: var(--primaryButtonText);
+  background-color: var(--primaryButton);
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  white-space: nowrap;
+  border: 0;
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: -1px;
+  -webkit-appearance: button;
+  margin: 0;
+  transition: opacity 0.3s;
+}
+
+.form-wrapper button:hover {
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 1250px) {
+  .form-wrapper form {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .form-wrapper form {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .form-wrapper input,
+  .form-wrapper button {
+    font-size: 14px;
+  }
+}
